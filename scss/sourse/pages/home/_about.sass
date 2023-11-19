@@ -1,0 +1,54 @@
+.about-slider
+  padding-top: 50px
+.about-item
+  position: relative
+  height: 100%
+  height: 340px
+  font-size: 20px
+  padding: 50px 30px 30px
+  display: flex
+  flex-direction: column
+  position: relative
+  overflow: hidden
+  h3
+    font-size: 48px
+  .btn-container
+    margin-top: auto
+
+.about-item-num
+  @include positionElement(110px,110px,0,0,left,bottom)
+  background-color: $redColor
+  color: $whiteColor
+  font-size: 40px
+  border-radius: 0 40px 0 0
+  text-align: center
+  font-style: normal
+  display: flex
+  span
+    margin: auto
+
+.about-item-info
+  background-color: $grayColor
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  border-radius: 0 40px 0 40px
+  gap: 15px
+  sup
+    margin-top: -10px
+    display: inline-block
+  .more-btn--black
+    span
+      display: block
+      margin-top: 10px
+.about-item-price
+  background-color: $redColor
+  color: $whiteColor
+  border-radius: 0 40px 0 40px
+.about-item-next
+  color: $grayColorSecond
+.about-item-main
+  border-radius: 0 40px 0 0
+.about-item-preview
+  border-radius: 0 40px 0 0
+  .about-item-num
+    background-color: $grayColorSecond

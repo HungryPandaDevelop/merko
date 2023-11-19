@@ -1,0 +1,69 @@
+.main-home
+  height: 100vh
+  min-height: 620px
+  background-color: $blueColor
+  position: relative
+  color: $whiteColor
+  h2,h3
+    color: inherit
+  .num-slider
+    max-width: 1280px
+    position: absolute
+    height: 50px
+    left: 50%
+    margin-left: -640px
+    top: 80%
+    margin-top: -14px
+    font-size: 20px
+    padding-left: 64px
+    *
+      display: inline-block
+  .main-grid
+    margin-top: auto
+    margin-bottom: auto
+  h2
+    font-size: 64px
+    margin-bottom: 30px
+    line-height: 1.2
+  h3
+    font-size: 20px
+    font-weight: 500
+  .lSSlideOuter
+    position: absolute
+    width: 100%
+  .main-full
+    height: 100%
+    position: relative
+  .lSAction
+    max-width: 1280px
+    left: 50%
+    margin-left: -640px
+    z-index: 2
+    top: 80%
+  .lSNext
+    right: auto
+    left: 90px
+.main-home-gradient
+  @include positionElement(100%, calc(100%  - 200px), 0, 0, left, bottom)
+  @include bgImageEl("../images/main-home-gradient.png", cover, center top)
+.home-slider-item
+  height: 100%
+  padding-top: 150px
+  display: flex
+
+.main-home-img
+  @include positionElement(100%,100%,0,0)
+
+.main-scroll-down
+  @include positionElement(80px, 245px, 0, 0, right, bottom, 3)
+  background: $redColor
+  text-align: center
+  padding: 28px 4px
+  cursor: pointer
+  i
+    @include icoEl(40px, 40px, "../images/arrows/arrow-down-white.svg")
+    // @mixin icoEl(40px, 40px, $img:none, $va:middle, $s:contain, $p:center, $r:no-repeat)
+.loop-main-btn
+  position: absolute
+  bottom: 180px
+  right: 120px

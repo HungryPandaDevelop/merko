@@ -1,0 +1,7 @@
+mixin advantagesItem(name, img, extra)
+	.advantages-item(class=extra ? 'extra' : '') 
+		img(src=img, alt="")
+		.advantages-item-text
+			h3 
+				=name
+			i

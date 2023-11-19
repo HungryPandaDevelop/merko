@@ -1,0 +1,56 @@
+footer
+	.main-grid
+		.col-3
+			.nav.nav-second
+				ul
+					each val in ["О компании","Сервис и запасные части","Проекты","Вакансии","Документы","Контакты"]
+						li  
+							a(href="#") 
+								= val
+		.col-3
+			.nav
+				h3 
+					a(href="#")  Продукция
+				ul
+					each val in ["Асфальтобетонные заводы","Грунтосмесительные установки","Фронтальные погрузчики","Бетоносмесительные установки","Дополнительное оборудование","Промышленные мельницы","Дорожно-строительная техника","Дробильно-сортировочные комплексы"]
+						li  
+							a(href="#") 
+								= val
+		
+
+		.col-3
+			.feedback-footer-item 
+				span Официальный представитель Производственная компания "Дорожные технологии" 
+				b B 192148, г. Санкт-Петербург, ул. Седова, д. 13
+			.feedback-footer-item
+				span Телефон:
+				a(href="#") +7 (812) 900 61 90
+			.feedback-footer-item
+				span Почта:
+				a(href="#") mail@mail.ru
+
+		.col-3.feedback
+			a.logo(href="./index.html")
+				img(src="/images/logo-black.svg", alt="")
+			.feedback-footer-item
+				a(href="#")  +7 (495) 969 58 69
+			.feedback-footer-item
+				a(href="#") mail@mail.ru
+
+			.feedback-footer-item
+				span Адрес:
+				b 141031, МО, г. Мытищи,
+					br
+					| пос. Нагорное, ул. Центральная, вл. 3, с. 3, пом. 3
+			+social(["v"])
+			.feedback-footer-item
+				span Режим работы:
+				b пн-пт с 9:00 до 19:00
+		.col-12
+			ul.footer-links
+				li
+					| ©2023г. ООО "Мерко Руссланд". Все права защищены
+				li
+					a(href="#") Политика конфиденциальности
+				li
+					a(href="#") Разработка сайта Style You

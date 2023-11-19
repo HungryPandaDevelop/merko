@@ -1,0 +1,25 @@
+mixin productItem(name, text, img)
+	.product-item
+		.more-btn--white.product-btn-hover
+			i
+		.product-item-img
+			h3=name
+			.product-item-cover.img-cover
+				img(src="/images/temp/product/"+img, alt="")
+			.more-btn--white
+				i
+		.product-item-info 
+			ul.ln.product-item-description
+				li
+					div Производительность:
+					b 130-150 т/ч  
+				li
+					div Мощность
+					b 80 кВт
+				li
+					div Площадь установки:
+					b 40м3
+		.btn-product-container
+			div
+				a(href="#").btn.btn--red Забронировать
+			.product-item-price=text

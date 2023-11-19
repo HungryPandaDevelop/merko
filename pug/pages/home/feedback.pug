@@ -1,0 +1,42 @@
+section.feedback
+	.head-section.main-full
+			h2
+				| Запрос коммерческого предложения 
+			div Если вам требуется консультация по любому типу оборудования, представленного на сайте, или вы хотите получить индивидуальное коммерческое предложение, то, пожалуйста, заполните данную форму, и наши специалисты в кратчайшие сроки свяжутся с вами. 
+	.main-grid
+		.col-6 
+			.input-box
+				label Ваше имя:*
+				+inputText('Введите','require')
+		.col-6 
+			.input-box
+				label Ваша должность:*
+				+inputText('Введите','require')
+		.col-6 
+			.input-box
+				label Ваш телефон:*
+				+inputPhone(' +7 000 - 00 – 00 ', 'require')
+		.col-6 
+			.input-box
+				label Ваша должность:
+				+inputText('Введите',)
+		.col-6 
+			.input-box
+				label Email
+				+inputEmail('Email')
+			.input-box
+				label Наименование организации:
+				+inputText('Введите')
+		.col-6 
+			.input-box
+				label Дополнительные комментарии:
+				+inputTextarea('Введите')
+		.col-12 
+			.input-box
+				.checkbox.agreement
+					label Согласен (на) на обработку 
+						a(href="#") персональных данных 
+						input(type="checkbox" checked)
+						span
+			.btn-container 
+				a.btn.btn--red(href="#") Отправить

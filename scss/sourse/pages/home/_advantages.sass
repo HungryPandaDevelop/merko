@@ -1,0 +1,35 @@
+.advantages-item
+  // width: 260px
+  margin: 0 0 30px
+  position: relative
+  // text-transform: uppercase
+  img
+    width: 70px
+    height: 70px
+    margin: 0 0 15px
+  h3
+    font-size: 20px
+    font-weight: 500
+    margin: 0 0 30px
+  &.extra
+    color: $whiteColor
+    i
+      background-image: url('../images/icons/more-white-fill.svg')
+.advantages-item-text
+  position: relative
+  i
+    cursor: pointer
+    @include icoEl(50px,50px, '../images/icons/more-red-fill.svg')
+.advantages-box
+  position: relative
+  color: $whiteColor
+  display: flex
+  height: 100%
+  h2
+    margin-top: auto
+    position: relative
+    color: inherit
+.advantages-bg
+  @include positionElement(calc(100% + 60px),700px,-30px, 30px)
+  background-color: $redColor
+  border-radius: 0 30px 0 30px
