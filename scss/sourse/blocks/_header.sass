@@ -1,14 +1,15 @@
 
 .stub
-  height: 70px
+  height: 102px
 
 header
-  @include positionElement(100%, auto, 0, auto, left, top, 3, fixed )
+  @include positionElement(100%, auto, 0, auto, left, top, 3 )
   color: $whiteColor
   @include bgImageEl("../images/header-gradient.png", cover, center bottom)
   // background-color: $whiteColor
   min-width: 320px
   padding: 10px 0
+  transition: ease-out 0.5s
   a
     text-decoration: none
     &:hover
@@ -19,6 +20,36 @@ header
     display: none
   .main-grid
     gap: 15px 30px
+  &.stick
+    top: -200px
+    position: fixed
+  &.show
+    top: 0
+    background: $whiteColor
+    color: $blackColor
+    border-bottom: 1px solid #eee
+    .logo-red
+      display: flex
+    .logo-white
+      display: none
+    .inner-nav i
+      background-image: url("../images/arrows/carret-down-black.svg")
+    .phone-btn
+      i
+        background-image: url("../images/icons/phone-black.svg")
+      &:hover
+        i
+          background-image: url("../images/icons/phone-red.svg")
+    .mail-btn
+      i
+        background-image: url("../images/icons/mail-black.svg")
+      &:hover
+        i
+          background-image: url("../images/icons/mail-red.svg")
+
+.logo-red
+  display: none
+
 .logo
   img
     transition: ease-out 0.25s
@@ -71,10 +102,10 @@ header
     i
       @include positionElement(20px,20px, -3px, 50%,right)
       transform: translateY(-50%)
-      @include bgImageEl("../images/carret-white.svg", 10px)
+      @include bgImageEl("../images/arrows/carret-down-white.svg", 34px)
     &:hover
       i
-        background-image: url("../images/carret-red.svg")
+        background-image: url("../images/arrows/carret-down-red.svg")
     &.inner-nav
       padding-right: 20px
 .feedback-header

@@ -1,4 +1,6 @@
-mixin productItem(name, text, img)
+mixin productItem(name, text, img, hint)
+	if hint 
+		.product-item-hint Отгрузка 3 дня
 	.product-item
 		.more-btn--white.product-btn-hover
 			i

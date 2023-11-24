@@ -1,0 +1,58 @@
+include ../default/build-header
+	include ../blocks/header-content
+	.stub
+	.main-full
+		+breadcrumbs('Рециклинг')
+	.content
+		.recycling-main
+			.main-grid
+				.col-5
+					.recycling-main-box 
+						h1 Рециклинг
+						.recycling-main-item 
+							b 1
+							div Значительно снижает производственные затраты — расходы на битум, минеральные заполнители, транспортировку
+						.recycling-main-item 
+							b 2
+							div Ослабляет негативное влияние на окружающую среду благодаря использованию меньшего количества нефтепродуктов и минералов
+						.recycling-main-item 
+							b 3
+							div Сокращает выбросы CO₂
+						.recycling-main-item 
+							b 4
+							div Уменьшает стоимость хранения материалов
+		.main-full 
+			.recycling-scale-container
+				h2 Технологии рециклинга
+			.recycling-scale
+				.recycling-scale-item 
+					b 25%
+					div Возможность добавления 25 % холодного рециклингового асфальта (в зависимости от системы, температуры смеси и влажности) в смеситель.
+				.recycling-scale-item 
+					b 60%
+					div Возможность добавления до 60 % горячего рециклингового асфальта.
+				.recycling-scale-item 
+					b 100%
+					div Возможность добавления до 100% горячего рециклингового асфальта.
+				.recycling-scale-line
+		.recycling-slider-container
+			.recycling-slider
+				-for(x=0;x<=4;x++)
+					.recycling-slider-item
+						.main-grid
+							.col-6
+								.recycling-item-img
+									.img-cover
+										img(src="/images/temp/1.jpg", alt="")
+									h3  Добавление холодного рециклингового асфальта в смеситель
+							.col-6
+								.recycling-item-info 
+									b 25%
+									h4  Преимущества:
+									ul.custom-disk
+										li Недорогая, простая в монтаже и эксплуатации система может устанавливаться на любом заводе, не требует частого технического обслуживания.
+										li Раздельное добавление рециклингового асфальта и заполнителей в смеситель.
+										li Совместимость с низкотемпературными смесями.
+										li Высокое качество асфальта, минимальная вероятность появления отраженных и усталостных трещин. В случае неровности нижележащих слоев покрытие не деформируется.
+	.stub
+	include ../blocks/footer

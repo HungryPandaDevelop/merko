@@ -1,0 +1,98 @@
+.product-main
+  margin-bottom: 45px
+
+.product-slider-container
+  position: relative
+  height: 580px
+  // padding-bottom: 86px
+  margin-bottom: 30px
+  // overflow: hidden
+  &::before
+    content: ''
+    @include positionElement(calc(100% - 30px),calc(100% - 15px), -30px,30px)
+    border: 10px solid $redColor
+    border-radius: 0 50px 0 50px
+  ul
+    display: inline-block
+    list-style: none
+    margin: 0
+    padding: 0
+  img
+    width: 100%
+
+  ul,li
+    margin: 0
+    padding: 0
+    letter-spacing: normal
+  .lSSlideWrapper
+    height: calc(100% - 90px)
+  .lSGallery
+    bottom: 0
+    a
+      width: 100%
+      height: 80px
+      position: relative
+      border-radius: 0
+      margin: 0
+
+      img
+        @include positionElement(100%,100%,0,0)
+        object-fit: cover
+      &::before
+      &::after
+        display: none
+  .lSAction
+    display: none !important
+  .lSSlideWrapper
+    border-radius: 0 50px 0 0
+.product-slider-item
+  height: 100%
+  position: relative
+  img
+    @include positionElement(100%,100%,0,0)
+    object-fit: cover
+.product-slider-loop
+  @include positionElement(80px,80px, 0, 0, left, bottom,2, absolute, flex)
+  background-color: $redColor
+  border-radius: 0 30px 0 0
+  i
+    display: inline-block
+    margin: auto
+.product-about
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  gap: 30px
+  // margin-bottom: 30px
+  h3
+    font-size: 36px
+  .about-item
+    padding: 30px 21px 15px
+    height: 220px
+    font-size: $standartSize
+.product-about-text
+  font-size: 15px
+
+.product-info
+  background-color: $grayColor
+
+  background-color: #f4f4f4
+  border: 1px solid #ccc
+
+  padding: 30px
+  border-radius: 0 50px 0 50px
+  // height: 100%
+
+  h3
+    font-size: 28px
+    margin: 0 0 30px
+  h4
+    font-size: 21px
+  .main-grid
+    padding: 0
+.product-description
+  h3
+    margin-bottom: 15px
+  .btn-container
+    text-align: center
+.product-description-container
+  margin-bottom: 15px

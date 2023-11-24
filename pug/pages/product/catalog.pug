@@ -1,0 +1,45 @@
+include ../../default/build-header
+	include ../../blocks/header-content
+	.stub
+	.main-full
+		+breadcrumbs('Продукция')
+	.content
+		.main-full 
+			h1 Продукция
+		.main-grid
+			.col-3
+				.filter-product
+					.filter-product-item
+						h3 Категория:
+						ul.ln
+							li 
+								a(href="#") Асфальтобетонные заводы
+							li 
+								a(href="#") Грунтосмесительные установки
+							li 
+								a(href="#") Фронтальные погрузчики
+							li 
+								a(href="#") Бетоносмесительные установки
+							li 
+								a(href="#") Дополнительное оборудование
+							li 
+								a(href="#") Промышленные мельницы
+							li 
+								a(href="#") Дорожно-строительная техника
+							li 
+								a(href="#") Дробильно-сортировочные комплексы
+					.filter-product-item
+						h3 Производительность:
+						+inputCheckbox(['30 м3/ч', '50 м3/ч', '60 м3/ч', '80 м3/ч', '110 м3/ч', '130 м3/ч', '150 м3/ч', '180 м3/ч', '200 м3/ч'])
+					.filter-product-item
+						h3 Объем смесителя:
+						+inputCheckbox(['30 м3/ч', '50 м3/ч', '60 м3/ч', '80 м3/ч', '110 м3/ч', '130 м3/ч', '150 м3/ч', '180 м3/ч', '200 м3/ч'])
+					.btn-container 
+						a.btn.btn--black-border Показать еще
+			.col-9 
+				.main-grid
+					-for(var x = 0; x < 4; x++)
+						.col-4
+							+productItem("Грунтосмесительная установка WCZ400","150 млн. руб.","1.jpg", true)
+		.stub
+	include ../../blocks/footer

@@ -11,30 +11,69 @@ defaultSlider.lightSlider({
   adaptiveHeight: true,
 
 });  
+
 let mainSlider = $('.main-slider');
 
 mainSlider.lightSlider({
   item:1,
-  loop:true,
-  slideMove:2,
-  speed:600,
+  // loop:true,
+  slideMove:1,
+  speed:500,
+  slideEndAnimation:false,
   // adaptiveHeight: true,
   pager: false,
   onSliderLoad: function (el) {
-    // console.log('onSliderLoad', el);
-    console.log('getTotalSlideCount', el.getTotalSlideCount());
+
+    $('.home-slider-item').each(function(){
+      let sliceLetter = (tag)=>{
+        let objLetters = $(this).find(tag);
+    
+        let letters = objLetters.text();
+      
+        objLetters.empty();
+      
+        Array.from(letters).forEach((i,index)=>{
+          let space = i === ' ' ? ' ' : '';
+          let delay = (Math.floor(index / 10) / 10) + 0.35; // Измените 3 на желаемый шаг
+          objLetters.append('<em><span style="transition-delay:'+delay+'s">'+i+'</span></em>' + space);
+        });
+      }
+      sliceLetter('h2')
+      sliceLetter('h3')
+    });
+
     $('.main-home .total').text(el.getTotalSlideCount())
+    for(let i = 1; i < el.getTotalSlideCount()+1; i++){
+      $('.main-home .current ul').append('<li>'+i+'</li>')
+    }
+    
   },
   onBeforeSlide: function (el) {
     // console.log('onAfterSlide', el);
     console.log('getCurrentSlideCount', el.getCurrentSlideCount());
-    $('.main-home .current').text(el.getCurrentSlideCount())
+    $('.main-home .current ul').css({'transform':'translateY(-' +  (el.getCurrentSlideCount()-1) * 30 + 'px)'})
   },
+});  
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+})
+
+
+$('.product-slider').lightSlider({
+  loop:true,
+  gallery:true,
+  item:1,
+  thumbItem:6,
+  slideMargin: 30,
+  enableDrag: false,
+  currentPagerPosition:'left',
 });  
 
 
 
-var totalSlides = $('.main-slider .lSPager').appendTo("<div>test</div>");
+
 
 
 let partnersSlider = $('.partners-slider');
@@ -49,56 +88,22 @@ partnersSlider.lightSlider({
 });  
 
 
-let multySlider = $('.multy-slider');
+let recyclingSlider = $('.recycling-slider');
 
-multySlider.lightSlider({
-  item: 3,
-  loop:false,
+recyclingSlider.lightSlider({
+  item: 1,
+  loop: false,
   slideMove:1,
   easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
   speed:600,
-  adaptiveHeight: true,
-
+  autoWidth:true,
 });  
 
 
 
 
-let thumbSlider = $('.thumb-slider');
 
-thumbSlider.lightSlider({
 
-  gallery:true,
-  item:1,
-  thumbItem:4,
-  slideMargin:0,
-  enableDrag: false,
-  currentPagerPosition:'top',
-});  
-
-let thumbSliderVericale = $('.thumb-slider-verticale');
-
-thumbSliderVericale.lightSlider({
-
-  gallery:true,
-  item:1,
-  vertical:true,
-  verticalHeight:300,
-  controls: false,
-  // vThumbWidth:50,
-  thumbItem:4,
-});  
-
-$('.input-date').each(function(){
-  let dp = new AirDatepicker(this,{
-    timepicker: true,
-    timeFormat: 'hh:mm AA',
-    onSelect({date}) {
-      $(this).addClass('input-empty');
-      // console.log('done', date) 
-    }
-  });
-})
 
 
 
@@ -404,18 +409,33 @@ function changeStatePass(){
 
 
 var st = 0;
+
+let homeHeight = $('.main-home').height();
+
+let header = $('.main-header');
+
 window.addEventListener('scroll', function (e) {
 
   st = $(this).scrollTop();
 
-  if(st > 0){
-    $('header').addClass('stick');
+  if(st > 120 && st < homeHeight){
+    header.addClass('stick');
+    header.removeClass('show');
+  }
+  else if(st > homeHeight){
+    header.addClass('show');
+    
   }
   else{
-    $('header').removeClass('stick');
+    header.removeClass('stick');
   }
-
 });   
+
+
+
+
+
+
 
 
 

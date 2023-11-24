@@ -31,8 +31,6 @@ $icoOffset: 8px
 	@include icoBtn("../images/icons/phone-white.svg", "../images/icons/phone-red.svg", $icoSize)
 .mail-btn
 	@include icoBtn("../images/icons/mail-white.svg", "../images/icons/mail-red.svg", $icoSize)
-.marker-btn
-	@include icoBtn("../images/icons/marker-black.svg", "../images/icons/marker-gray.svg", $icoSize)
 
 .whatsapp-btn
 	@include icoBtn("../images/social/whatsapp-black.svg", false, $icoSize)
@@ -41,6 +39,12 @@ $icoOffset: 8px
 .more-btn--black
 	@include icoBtn("../images/icons/more-black.svg", "../images/icons/more-red.svg", 50px)
 	text-decoration: none
+.link-next
+	@include icoBtn("../images/arrows/arrow-right-black.svg", "../images/arrows/arrow-right-red.svg", 30px)
+	text-decoration: none
+	i
+		margin-right: 0
+		margin-left: 8px
 .more-btn--white
 	@include icoBtn("../images/icons/more-white.svg", "../images/icons/more-white.svg", 50px)
 	text-decoration: none

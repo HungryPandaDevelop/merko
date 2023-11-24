@@ -12,7 +12,8 @@ $gap: 30px
 	max-width: $maxWidth
 	margin: 0 auto
 	position: relative
-
+	.main-grid
+		padding: 0
 .main-full
 	padding: 0 $indent
 	max-width: $maxWidth
@@ -44,6 +45,7 @@ section
 				text-decoration: underline
 	.btn-container
 		text-align: right
+
 .btn-container-section
 	padding: 40px 0 0px
 	text-align: center
@@ -62,7 +64,10 @@ section
 	display: inline-block
 	em
 		font-size: 0
+		margin-right: 5px
 		margin-left: 5px
+		text-align: center
+		display: inline-block
 		@include icoEl(20px, 20px, "../images/arrows/carret-right-gray.svg", middle, 130%)
 		vertical-align: middle
 	a
@@ -82,7 +87,6 @@ section
 	min-height: calc(100vh - 130px)
 	h1
 		padding: 10px 0 30px
-		color: $blueColor
 
 .section-stub
 	height: 75px

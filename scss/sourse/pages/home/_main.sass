@@ -4,20 +4,9 @@
   background-color: $blueColor
   position: relative
   color: $whiteColor
+
   h2,h3
     color: inherit
-  .num-slider
-    max-width: 1280px
-    position: absolute
-    height: 50px
-    left: 50%
-    margin-left: -640px
-    top: 80%
-    margin-top: -14px
-    font-size: 20px
-    padding-left: 64px
-    *
-      display: inline-block
   .main-grid
     margin-top: auto
     margin-bottom: auto
@@ -28,6 +17,7 @@
   h3
     font-size: 20px
     font-weight: 500
+
   .lSSlideOuter
     position: absolute
     width: 100%
@@ -40,9 +30,63 @@
     margin-left: -640px
     z-index: 2
     top: 80%
+  .lSPrev,
+  .lSNext
+    transition: ease-out 0.5s
+
   .lSNext
     right: auto
-    left: 90px
+    left: 110px
+    &:hover
+      transform: translateX(10px) translateY(-50%)
+
+  .lSPrev
+    &:hover
+      transform: translateX(-10px) translateY(-50%)
+
+.home-slider-item
+  em
+    font-style: normal
+    position: relative
+    display: inline-block
+    overflow: hidden
+    height: 1em
+  span
+    position: relative
+    top: 100%
+    transition: ease-out 0.5s
+  &.active
+    em
+      span
+        top: 0
+.num-slider
+  max-width: 1280px
+  position: absolute
+  height: 30px
+  left: 50%
+  margin-left: -640px
+  top: 80%
+  margin-top: -14px
+  font-size: 20px
+  padding-left: 64px
+  *
+    display: inline-block
+    vertical-align: top
+  .current
+    width: 18px
+    height: 100%
+    // outline: 1px solid red
+    position: relative
+    overflow: hidden
+    ul
+      position: absolute
+      top: 0
+      transition: ease-out 0.25s
+
+    li
+      display: block
+.main-home-slider
+  // transition-delay: 0.5s !important
 .main-home-gradient
   @include positionElement(100%, calc(100%  - 200px), 0, 0, left, bottom)
   @include bgImageEl("../images/main-home-gradient.png", cover, center top)
@@ -62,8 +106,9 @@
   cursor: pointer
   i
     @include icoEl(40px, 40px, "../images/arrows/arrow-down-white.svg")
+    transition: ease-out 0.5s
     // @mixin icoEl(40px, 40px, $img:none, $va:middle, $s:contain, $p:center, $r:no-repeat)
-.loop-main-btn
-  position: absolute
-  bottom: 180px
-  right: 120px
+
+  &:hover
+    i
+      transform: translateY(15px)

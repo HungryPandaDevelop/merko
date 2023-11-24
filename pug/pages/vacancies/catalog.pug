@@ -1,0 +1,24 @@
+include ../../default/build-header
+	include ../../blocks/header-content
+	.stub 
+	.main-full
+		+breadcrumbs('Вакансии')
+		.content
+			.main-full
+				h1 Вакансии
+			.main-full.vacancies
+				p В связи с развитием направлений и дальнейшим расширением деятельности ООО «Мерко Руссланд», приглашаем на работу квалифицированных специалистов на следующие вакансии:
+				ul 
+					li 
+						a(href="#") Бухгалтер на первичные документы
+					li 
+						a(href="#")  Машинист автокрана
+					li 
+						a(href="#")  Специалист сервисной службы
+				p 
+					| Резюме присылать на адрес электронной почты: 
+					a.btn.btn--black-border(href="#")  director@merko-russland.com
+			include ../home/feedback.pug
+			.stub
+	include ../../blocks/footer
+	

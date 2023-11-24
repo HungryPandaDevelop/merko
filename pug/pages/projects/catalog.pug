@@ -1,0 +1,28 @@
+include ../../default/build-header
+	include ../../blocks/header-content
+	.stub
+	.main-full
+		+breadcrumbs('Проекты')
+	.content
+		.main-full 
+			h1 Проекты
+		-for(var x = 0; x < 4; x++)
+			.project-item
+				.main-grid
+					.col-6
+						.project-item-img
+							.img-cover 
+								img(src="/images/temp/1.jpg", alt="")
+					.col-6
+						.project-item-info
+							div 
+								.project-item-type Асфальтобетонный завод
+								h3 Асфальтобетонный завод SANY SLB3000C8
+							.btn-container
+								a.more-btn--black(href="#") 
+									i
+									span Подробнее
+		.main-full 
+			+pagination()
+		.stub
+	include ../../blocks/footer

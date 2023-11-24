@@ -1,0 +1,93 @@
+.recycling-main
+  height: 660px
+  position: relative
+  @include bgImageEl("../images/temp/rec.jpg", cover)
+.recycling-slider-item
+  position: relative
+.recycling-main-box
+  background-color: $redColor
+  color: $whiteColor
+  padding: 30px
+  border-radius: 0 50px 0 50px
+  font-size: 20px
+  font-weight: 300
+  position: relative
+  top: 90px
+  h1
+    padding: 0
+
+  b
+    font-size: 28px
+.recycling-main-item
+  margin-bottom: 15px
+.recycling-scale-container
+  padding-top: 45px
+  padding-bottom: 45px
+  text-align: right
+  h2
+    font-size: 48px
+.recycling-scale
+  position: relative
+  display: flex
+  justify-content: space-between
+  margin-bottom: 45px
+.recycling-scale-item
+  width: 33.33%
+  max-width: 350px
+  padding-bottom: 50px
+  b
+    font-size: 64px
+    display: block
+    margin-bottom: 15px
+.recycling-scale-line
+  @include positionElement(100%, 40px ,0,0, left, bottom)
+  @include bgImageEl("../images/recycling-line.svg", cover)
+
+.recycling-slider-item
+  position: relative
+  height: 490px
+.recycling-item-img
+  position: relative
+  height: 100%
+  overflow: hidden
+  border-radius: 0 50px 0 50px
+  h3
+    @include positionElement(80%, auto, 0,0,left,bottom)
+    background-color: $redColor
+    color: $whiteColor
+    font-size: 20px
+    padding: 22px 30px
+    border-radius: 0 30px 0 30px
+.recycling-item-info
+  padding: 30px
+  background-color: #ECECEC
+  border-radius: 0 50px 0 50px
+  b
+    font-size: 48px
+.recycling-slider-container
+  position: relative
+  overflow: hidden
+  // max-width: 1280px
+  // margin: 0 auto
+  .lSSlideOuter
+    overflow: visible
+    padding-top: 45px
+  .lSSlideWrapper
+    max-width: 1280px
+    margin: 0 auto
+    overflow: visible
+  .lSPager
+    display: none
+  .lSAction
+    left: auto
+    @include positionElement(130px,1px,0, -30px,right)
+  .lSPrev
+    left: 0
+    @include bgImageEl("../images/arrows/arrow-left-black.svg")
+    &:hover
+      opacity: 0.8
+  .lSNext
+    right: 0
+    @include bgImageEl("../images/arrows/arrow-right-black.svg")
+    &:hover
+      opacity: 0.8

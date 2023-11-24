@@ -1,0 +1,50 @@
+include ../../default/build-header
+	include ../../blocks/header-content
+	.stub
+	.main-full
+		+breadcrumbs('Асфальтобетонный завод SLB1500X8')
+		.content
+			.main-grid
+				.col-8 
+					h1 Асфальтобетонный завод SANY SLB3000C8
+				.col-4.link-next-container
+					a.link-next(href="#") 
+						span Следующий проект
+						i
+			.main-grid.product-main
+				.col-6
+					.product-slider-container
+						.product-slider
+							-for(x=0;x<10;x++)
+								a.product-slider-item(data-thumb="/images/temp/1.jpg" data-src="/images/temp/1.jpg" href="/images/temp/1.jpg" data-lightbox='product')
+									.product-slider-loop
+										i.loop-ico
+									img(src="/images/temp/1.jpg",  alt="")
+
+				.col-6 
+					.product-info
+						h3 Технические характеристики ручного катка MERKO MRH50
+						.main-grid
+							.col-6
+								h4 58 дней
+								span Срок реализации проекта
+							.col-6
+								h4 21.05.2022
+								span Дата сдачи проекта
+							.col-12
+								h4 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+								span Использованное оборудование
+							.col-12
+								h4 Симферополь / Россия
+								span Месторасположение\
+			.main-full
+				.product-description
+					h3 Описание проекта:
+					.product-description-container Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error laborum tempora aliquid aut sunt in optio officiis magnam molestias id, asperiores deserunt quam repellat praesentium necessitatibus. Qui, natus labore!
+					.btn-container 
+						.btn.btn--black-border Показать еще
+			include ../home/products.pug
+			include ../home/feedback.pug
+			.stub
+	include ../../blocks/footer
+	

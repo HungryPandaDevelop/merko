@@ -1,17 +1,32 @@
 
 var st = 0;
+
+let homeHeight = $('.main-home').height();
+
+let header = $('.main-header');
+
 window.addEventListener('scroll', function (e) {
 
   st = $(this).scrollTop();
 
-  if(st > 0){
-    $('header').addClass('stick');
+  if(st > 120 && st < homeHeight){
+    header.addClass('stick');
+    header.removeClass('show');
+  }
+  else if(st > homeHeight){
+    header.addClass('show');
+    
   }
   else{
-    $('header').removeClass('stick');
+    header.removeClass('stick');
   }
-
 });   
+
+
+
+
+
+
 
 
 
