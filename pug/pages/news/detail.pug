@@ -1,5 +1,12 @@
 include ../../default/build-header
-  include ../../blocks/header
-  .stub
-  //- +roofContent("Lorem impusm")
-  include ../detail/main.pug
+	include ../../blocks/header
+	.stub
+	.main-full
+		+breadcrumbs('Новость 1')
+	.content
+		.main-full 
+			h1 Новость 1
+		.main-grid 
+			.col-6
+			.col-6
+	include ../detail/main.pug

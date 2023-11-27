@@ -4,14 +4,7 @@
 .product-slider-container
   position: relative
   height: 580px
-  // padding-bottom: 86px
   margin-bottom: 30px
-  // overflow: hidden
-  &::before
-    content: ''
-    @include positionElement(calc(100% - 30px),calc(100% - 15px), -30px,30px)
-    border: 10px solid $redColor
-    border-radius: 0 50px 0 50px
   ul
     display: inline-block
     list-style: none
@@ -76,7 +69,6 @@
   background-color: $grayColor
 
   background-color: #f4f4f4
-  border: 1px solid #ccc
 
   padding: 30px
   border-radius: 0 50px 0 50px

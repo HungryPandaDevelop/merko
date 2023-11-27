@@ -12,20 +12,20 @@
 
   a, span
     width: 30px
-    height: 30px
+    height: 24px
     display: inline-block
     text-align: center
     font-weight: 500
     text-decoration: none
-    line-height: 27px
-    border: 1px solid $grayColor
+    line-height: 22px
+    border: 1px solid #E2E2E2
     border-radius: 4px
     font-size: $smallSize
     vertical-align: middle
     margin: 0 6px
     transition: ease-out 0.25s
-    color: $whiteColor
-    background-color: $grayColor
+    color: $blackColor
+    background-color: #E2E2E2
     cursor: pointer
     font-weight: 700
   li:hover a,
@@ -38,19 +38,22 @@
   li.selected a
     color: $whiteColor
     background-color: $redColor
-    border-color: $grayColor
+    border-color: $redColor
 
   .previous,
   .next
     a
+      background: none
       background-size: 100%
       font-size: 0
+      border-color: $whiteColor
     &.disabled
       opacity: 0
       visibility: hidden
   .previous
     a
-      @include icoEl(30px, 30px, "../images/arrows/carret-left-gray.svg")
+
+      @include icoEl(30px, 30px, "../images/arrows/carret-left-black.svg")
 
       &:hover
         background-color: $redColor
@@ -58,7 +61,7 @@
 
   .next
     a
-      @include icoEl(30px, 30px, "../images/arrows/carret-right-gray.svg")
+      @include icoEl(30px, 30px, "../images/arrows/carret-right-black.svg")
       &:hover
         background-color: $redColor
         background-image: url("../images/arrows/carret-right-white.svg")

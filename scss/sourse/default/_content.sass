@@ -29,8 +29,18 @@ section
 
 .head-section
 	margin-bottom: 30px
+	position: relative
+	// &::after
+	// 	content: ""
+	// 	@include positionElement(calc(100% - 210px), 4px ,15px, 23px)
+	// 	background-color: $blackColor
 	h2
 		margin-bottom: 15px
+		// background-color: $whiteColor
+		position: relative
+		display: inline-block
+		z-index: 1
+		padding-right: 15px
 		span
 			display: block
 			font-size: $standartSize
@@ -45,7 +55,10 @@ section
 				text-decoration: underline
 	.btn-container
 		text-align: right
-
+	.more-btn--black
+		background-color: $whiteColor
+		position: relative
+		z-index: 1
 .btn-container-section
 	padding: 40px 0 0px
 	text-align: center
@@ -63,12 +76,12 @@ section
 	border-radius: 15px
 	display: inline-block
 	em
-		font-size: 0
+		// font-size: 0
 		margin-right: 5px
 		margin-left: 5px
 		text-align: center
 		display: inline-block
-		@include icoEl(20px, 20px, "../images/arrows/carret-right-gray.svg", middle, 130%)
+		// @include icoEl(20px, 20px, "../images/arrows/carret-right-gray.svg", middle, 130%)
 		vertical-align: middle
 	a
 		text-decoration: none

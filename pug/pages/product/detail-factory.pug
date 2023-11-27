@@ -1,0 +1,109 @@
+include ../../default/build-header
+	include ../../blocks/header-content
+	.stub
+	.main-full
+		+breadcrumbs('Продукция')
+		.content
+			.main-grid
+				.col-8 
+					h1 Ручной каток MERKO MRH50
+				.col-4.link-next-container
+					a.link-next(href="#") 
+						span Следующий товар 
+						i
+			.main-grid.product-main
+				.col-6
+					.product-slider-container
+						.product-slider
+							-for(x=0;x<10;x++)
+								a.product-slider-item(data-thumb="/images/temp/1.jpg" data-src="/images/temp/1.jpg" href="/images/temp/1.jpg" data-lightbox='product')
+									.product-slider-loop
+										i.loop-ico
+									img(src="/images/temp/1.jpg",  alt="")
+					.product-about 
+						.about-item.about-item-price
+							h3 150 млн. руб
+							div Средняя стоимость
+							.btn-container 
+								a.more-btn--white(href="#") 
+									i
+									span Забронировать
+						.product-about-text 
+							p Все оборудование имеет сертификаты ISO9001:2000 и сертификаты соответствия нормам и директива Евросоюза – СЕ.
+							p Асфальтобетонный завод данной серии служит отличным решением для выпуска щебеночно-мастичных сфальтобетонных смесей.
+					.product-description
+						.product-description-container Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error laborum tempora aliquid aut sunt in optio officiis magnam molestias id, asperiores deserunt quam repellat praesentium necessitatibus. Qui, natus labore!
+						.btn-container
+							.btn.btn--black-border Показать еще
+				.col-6 
+					.product-info
+						h3 Технические характеристики Асфальтобетонного завода SLB1500X8
+						.main-grid
+							.col-7
+								h4 HONDA GX270
+								span Двигатель
+							.col-5
+								h4 MERKO
+								span Производитель
+							.col-7
+								h4 Ручной каток
+								span Тип
+							.col-5
+								h4 MRH50
+								span Модель
+							.col-7
+								h4 Полный привод
+								span Режим привода
+							.col-5
+								h4 70 Гц
+								span Частоты
+							.col-7
+								h4 Передний/задний валец
+								span Вибрация
+							.col-5
+								h4 500 кг
+								span Рабочий вес CECE
+							.col-7
+								h4 600 кг
+								span Рабочая ширина
+			.main-grid 
+				.col-4
+					.about-item.about-item-price
+						h3 SLB2000C8
+						div 120-160 тонн/час 42 м
+							sup 3
+						.btn-container 
+							a.more-btn--white(href="#") 
+								i
+								span Следующий завод
+				.col-4
+					.about-item.about-item-preview
+						.img-cover
+							img(src="/images/temp/z2.jpg", alt="")
+						.about-item-num 
+							span 2
+				.col-4
+					.about-item.about-item-preview
+						.img-cover
+							img(src="/images/temp/z2.jpg", alt="")
+						.about-item-num 
+							span 3
+			section
+				.head-section.main-grid
+					.col-8
+						h2
+							| Ключевые узлы
+						div Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in 
+					.col-4
+						.btn-container
+							a(href="#").more-btn--black
+								i 
+								span Подробнее
+				.main-grid
+					-for(var x = 0; x < 6; x++)
+						.col-3 
+							+simpleItem("Грунтосмесительная установка WCZ400","150 млн. руб.","1.jpg")
+			include ../home/feedback.pug
+			.stub
+	include ../../blocks/footer
+	

@@ -1,0 +1,10 @@
+mixin simpleItem(name, text, img)
+	.product-item
+		.more-btn--white.product-btn-hover
+			i
+		.product-item-img
+			h3=name
+			.product-item-cover.img-cover
+				img(src="/images/temp/product/"+img, alt="")
+			.more-btn--white
+				i
