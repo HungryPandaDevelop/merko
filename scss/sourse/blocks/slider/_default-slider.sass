@@ -1,22 +1,26 @@
-// .default-slider
-//   .lSGallery
-//     li
-//       position: relative
-//       height: 90px
-//       position: relative
-//       opacity: 0.8
-//       &.active
-//         opacity: 1
-//     a
-//       display: block
-//     img
-//       @include positionElement(100%,100%,0,0)
-//       object-fit: cover
-//   .lSPager.lSpg
-//     margin-bottom: 15px
-// .default-slider-item
-//   height: 350px
-//   position: relative
-//   img
-//     @include positionElement(100%,100%,0,0)
-//     object-fit: cover
+.slider-container
+  position: relative
+.num-slider
+  position: absolute
+  height: 30px
+  left: 0
+  top: 80%
+  margin-top: -14px
+  font-size: 20px
+  padding-left: 64px
+  *
+    display: inline-block
+    vertical-align: top
+  .current
+    width: 18px
+    height: 100%
+    // outline: 1px solid red
+    position: relative
+    overflow: hidden
+    ul
+      position: absolute
+      top: 0
+      transition: ease-out 0.25s
+
+    li
+      display: block

@@ -13,7 +13,7 @@
   h2
     font-size: 64px
     margin-bottom: 30px
-    line-height: 1.2
+    line-height: 1
   h3
     font-size: 20px
     font-weight: 500
@@ -21,13 +21,14 @@
   .lSSlideOuter
     position: absolute
     width: 100%
+    top: 0
   .main-full
     height: 100%
     position: relative
   .lSAction
     max-width: 1280px
     left: 50%
-    margin-left: -640px
+    transform: translateX(-50%)
     z-index: 2
     top: 80%
   .lSPrev,
@@ -50,7 +51,7 @@
     position: relative
     display: inline-block
     overflow: hidden
-    height: 1em
+    height: 1.1em
   span
     position: relative
     top: 100%
@@ -59,32 +60,7 @@
     em
       span
         top: 0
-.num-slider
-  max-width: 1280px
-  position: absolute
-  height: 30px
-  left: 50%
-  margin-left: -640px
-  top: 80%
-  margin-top: -14px
-  font-size: 20px
-  padding-left: 64px
-  *
-    display: inline-block
-    vertical-align: top
-  .current
-    width: 18px
-    height: 100%
-    // outline: 1px solid red
-    position: relative
-    overflow: hidden
-    ul
-      position: absolute
-      top: 0
-      transition: ease-out 0.25s
 
-    li
-      display: block
 .main-home-slider
   // transition-delay: 0.5s !important
 .main-home-gradient
@@ -112,3 +88,7 @@
   &:hover
     i
       transform: translateY(15px)
+@media (max-width: 992px)
+  .main-home
+    h2
+      font-size: 48px

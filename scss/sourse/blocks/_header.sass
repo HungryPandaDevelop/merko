@@ -15,9 +15,8 @@ header
     &:hover
       color: $redColor
   .btn
-    padding: 9px 5px
-  .hamburger-btn
-    display: none
+    padding: 6px 0
+    font-size: $smallSize
   .main-grid
     gap: 15px 30px
   &.stick
@@ -102,9 +101,11 @@ header
     padding: 6px 0
 
     i
-      @include positionElement(20px,20px, -3px, 50%,right)
-      transform: translateY(-50%)
+      @include positionElement(20px,20px, -4px, 50%,right)
+      transform: translateX(20px) translateY(-50%)
       @include bgImageEl("../images/arrows/carret-down-white.svg", 34px)
+      &::before
+        display: none
     &:hover
       i
         background-image: url("../images/arrows/carret-down-red.svg")
@@ -117,3 +118,11 @@ header
     font-weight: 700
   .mail-btn
     margin-left: 30px
+.header-tablet-nav
+  display: none
+@media (max-width: 998px)
+  .header-tablet-nav
+    display: block
+    text-align: right
+    .btn
+      margin-right: 30px

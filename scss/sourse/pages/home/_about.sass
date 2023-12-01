@@ -1,5 +1,40 @@
 .about-slider
-  padding-top: 50px
+  // padding-top: 50px
+
+.about-slider-container
+  .main-full
+    position: relative
+  .num-slider
+    top: 13px
+    color: $blackColor
+    left: auto
+    right: 50px
+  .lSSlideWrapper
+    max-width: 1280px
+    margin: 0 auto
+    overflow: visible
+  .lSSlideOuter
+    overflow: visible
+    padding-top: 45px
+  .lSSlideWrapper
+    max-width: 1280px
+    margin: 0 auto
+    overflow: visible
+  .lSPager
+    display: none
+  .lSAction
+    left: auto
+    @include positionElement(150px,1px,0, -30px,right)
+  .lSPrev
+    left: 0
+    @include bgImageEl("../images/arrows/arrow-left-black.svg")
+    &:hover
+      opacity: 0.8
+  .lSNext
+    right: 0
+    @include bgImageEl("../images/arrows/arrow-right-black.svg")
+    &:hover
+      opacity: 0.8
 .about-item
   position: relative
   height: 100%
