@@ -16,12 +16,6 @@ footer
     &:hover
       color: $blackColor
 
-  .footer-links
-    display: flex
-    justify-content: space-between
-    font-size: $smallSize
-    li
-
   .feedback
     text-align: right
   .social
@@ -43,6 +37,10 @@ footer
 
     a
       font-weight: 600
+.footer-links
+  display: flex
+  justify-content: space-between
+  font-size: $smallSize
 
 .feedback-footer-item
   margin: 0 0 15px
@@ -50,3 +48,27 @@ footer
     display: block
   a
     font-weight: 700
+
+.footer-mobile
+  display: none
+
+@media (max-width: 576px)
+  footer
+    font-size: 12px
+    .nav
+      font-size: inherit
+    .main-grid
+      gap: 0
+      padding: 30px 15px 10px
+  .footer-mobile
+    display: block
+  .footer-desktop
+    display: none
+  .footer-links
+    display: block
+    font-size: 10px
+    margin-bottom: 10px
+  .footer-delimetr
+    @include positionElement(calc(100% - 30px),1px, 15px, auto)
+    margin-top: -15px
+    background-color: $whiteColor

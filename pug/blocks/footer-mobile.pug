@@ -1,37 +1,16 @@
-footer.footer-desktop
+footer.footer-mobile
 	.main-grid
-		.col-3.col-sm-6
+		.col-12
+			a.logo(href="./index.html")
+				img(src="/images/logo-black.svg", alt="")
+		.col-6
 			.nav.nav-second
 				ul
 					each val in ["О компании","Сервис и запасные части","Проекты","Вакансии","Документы","Контакты"]
 						li  
 							a(href="#") 
 								= val
-		.col-3.col-sm-6
-			.nav
-				h3 
-					a(href="#")  Продукция
-				ul
-					each val in ["Асфальтобетонные заводы","Грунтосмесительные установки","Фронтальные погрузчики","Бетоносмесительные установки","Дополнительное оборудование","Промышленные мельницы","Дорожно-строительная техника","Дробильно-сортировочные комплексы"]
-						li  
-							a(href="#") 
-								= val
-		
-
-		.col-3.col-sm-6
-			.feedback-footer-item 
-				span Официальный представитель Производственная компания "Дорожные технологии" 
-				b B 192148, г. Санкт-Петербург, ул. Седова, д. 13
-			.feedback-footer-item
-				span Телефон:
-				a(href="#") +7 (812) 900 61 90
-			.feedback-footer-item
-				span Почта:
-				a(href="#") info@pk-dorteh.ru
-
-		.col-3.col-sm-6.feedback
-			a.logo(href="./index.html")
-				img(src="/images/logo-black.svg", alt="")
+		.col-6.feedback
 			.feedback-footer-item
 				a(href="#")  +7 (495) 969 58 69
 			.feedback-footer-item
@@ -43,14 +22,37 @@ footer.footer-desktop
 					br
 					| пос. Нагорное, ул. Центральная, вл. 3, с. 3, пом. 3
 			+social(["v"])
+
+		.col-12
+			.footer-delimetr
+			.nav
+				h3 
+					a(href="#")  Продукция
+				ul
+					each val in ["Асфальтобетонные заводы","Грунтосмесительные установки","Фронтальные погрузчики","Бетоносмесительные установки","Дополнительное оборудование","Промышленные мельницы","Дорожно-строительная техника","Дробильно-сортировочные комплексы"]
+						li  
+							a(href="#") 
+								= val
+		
+		.col-12 
+			.footer-delimetr
+		.col-6
+			.feedback-footer-item 
+				span Официальный представитель Производственная компания "Дорожные технологии" 
+				b B 192148, г. Санкт-Петербург, ул. Седова, д. 13
+			.feedback-footer-item
+				span Телефон:
+				a(href="#") +7 (812) 900 61 90
+			.feedback-footer-item
+				span Почта:
+				a(href="#") info@pk-dorteh.ru
+		.col-6 
 			.feedback-footer-item
 				span Режим работы:
 				b пн-пт с 9:00 до 19:00
-		.col-12
-			ul.footer-links
-				li
-					| ©2023г. ООО "Мерко Руссланд". Все права защищены
-				li
-					a(href="#") Политика конфиденциальности
-				li
-					a(href="#") Разработка сайта Style You
+
+		.col-6.footer-links 
+			a(href="#") Политика конфиденциальности
+		.col-6.footer-links
+			a(href="#") Разработка сайта Style You
+		.col-12.footer-links | ©2023г. ООО "Мерко Руссланд". Все права защищены

@@ -83,3 +83,25 @@ $('.faq-head').on('click',function(){
 });
 /*faq*/
 
+
+
+$('.popup-nav .menu-item-has-children > a').on('click',function(e){
+  e.preventDefault();
+  console.log('testing')
+  if( $(this).parent().hasClass('active')){
+    $('.popup-nav li').removeClass('active');
+    $(this).parent().removeClass('active');
+  }else{
+    $('.popup-nav li').removeClass('active');
+    $(this).parent().addClass('active');
+  }
+  
+
+});
+$('.back-link').on('click',function(e){
+e.preventDefault();
+if($(this).hasClass('back-link')){
+  $('.popup-nav li').removeClass('active');
+  $(this).parent().removeClass('active');
+}
+});

@@ -2,13 +2,13 @@ $icoSize: 24px
 $icoOffset: 8px
 
 .close-btn
-	@include icoEl($icoSize, $icoSize, "../images/icons/close-black.svg")
+	@include icoEl(32px, 32px, "../images/icons/close-black.svg")
 	cursor: pointer
 	&:hover
 		background-image: url("../images/icons/close-gray.svg")
 
 .hamburger-btn
-	@include icoEl($icoSize, $icoSize, "../images/icons/hamburger-black.svg", middle, contain, center right)
+	@include icoEl(32px, 32px, "../images/icons/hamburger-black.svg", middle, contain, center right)
 	cursor: pointer
 	&:hover
 		background-image: url("../images/icons/hamburger-gray.svg")
@@ -39,12 +39,7 @@ $icoOffset: 8px
 .more-btn--black
 	@include icoBtn("../images/icons/more-black.svg", "../images/icons/more-red.svg", 50px)
 	text-decoration: none
-.link-next
-	@include icoBtn("../images/arrows/arrow-right-black.svg", "../images/arrows/arrow-right-red.svg", 30px)
-	text-decoration: none
-	i
-		margin-right: 0
-		margin-left: 8px
+
 .more-btn--white
 	@include icoBtn("../images/icons/more-white.svg", "../images/icons/more-white.svg", 50px)
 	text-decoration: none
@@ -53,6 +48,20 @@ $icoOffset: 8px
 .more-btn--gray
 	@include icoBtn("../images/icons/more-gray.svg", "../images/icons/more-red.svg", 50px)
 	text-decoration: none
+.link-next
+	@include icoBtn("../images/arrows/arrow-right-black.svg", "../images/arrows/arrow-right-red.svg", 30px)
+	text-decoration: none
+	i
+		margin-right: 0
+		margin-left: 8px
+
+@media (max-width: 576px)
+	.more-btn--white,
+	.more-btn--gray,
+	.more-btn--black
+		i
+			width: 30px
+			height: 30px
 
 // .video-btn
 // 	cursor: pointer

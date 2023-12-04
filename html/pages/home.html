@@ -19,14 +19,39 @@
   <!-- range slider-->
   <!-- calendar input-->
   <!-- head end-->
+    <div class="popup element-show menu-hamburger" data-element="0">
+      <div class="popup-overlay popup-overlay-js"></div>
+      <div class="popup-container"> 
+        <div class="close-btn close-btn--popup close-js"></div>
+        <div class="menu-mobile">
+          <div class="menu-header"><a class="logo" href="#"> <img src="/images/logo-red.svg" alt=""></a></div>
+          <nav class="popup-nav">
+            <ul class="ln">
+              <li> <a href="#">Заводы у установки</a></li>
+              <li> <a href="#">Техника</a></li>
+              <li> <a href="#">Проекты</a><i></i>
+                <ul> 
+                  <li> <a href="#">Проект 1</a></li>
+                  <li> <a href="#">Проект 2</a></li>
+                  <li> <a href="#">Проект 3</a></li>
+                  <li> <a href="#">Проект 4</a></li>
+                </ul>
+              </li>
+              <li> <a href="#">Стать дилером</a></li>
+              <li> <a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="menu-footer">
+            <div class="menu-footer-item"> <a class="phone-btn" href="#"> <i></i><span>+7 (495) 969 58 69</span></a></div>
+            <div class="menu-footer-item"> <a class="mail-btn" href="#"> <i></i><span>dds@merko-russland.com</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
   <body> 
-    <!-- popup-menu end -->
-    <!-- header start-->
-    <!--include ../blocks/header.pug-->
-    <!-- header end-->
     <header class="main-header">
       <div class="main-grid">
-        <div class="col-12">
+        <div class="col-12 hidden-xs">
           <div class="vertical-align">
             <div class="feedback-header"><a class="phone-btn" href="#"> <i></i><span>+7 (495) 969 58 69</span></a><a class="mail-btn" href="#"> <i></i><span>dds@merko-russland.com</span></a></div>
           </div>
@@ -68,7 +93,7 @@
       <div class="main-home-slider main-slider">
         <div class="home-slider-item">
           <div class="main-grid">
-            <div class="col-7 col-offset-3 col-offset-md-1">
+            <div class="col-7 col-xs-12 col-offset-3 col-offset-md-1">
               <h2><em> <span style="transition-delay:0.25s">Асфальтобетонные </span></em><em><span style="transition-delay:0.5s">заводы SANY</span></em></h2>
               <h3><em><span style="transition-delay:0.75s">1 Производительностью от 80 до 450 тонн/час</span></em></h3>
             </div>
@@ -76,7 +101,7 @@
         </div>
         <div class="home-slider-item"> 
           <div class="main-grid">
-            <div class="col-7 col-offset-3">
+            <div class="col-7 col-xs-12 col-offset-3 col-offset-md-1">
               <h2><em> <span style="transition-delay:0.25s">Асфальтобетонные </span></em><em><span style="transition-delay:0.5s">заводы SANY</span></em></h2>
               <h3><em><span style="transition-delay:0.75s">2 Производительностью от 80 до 450 тонн/час</span></em></h3>
             </div>
@@ -84,7 +109,7 @@
         </div>
         <div class="home-slider-item"> 
           <div class="main-grid">
-            <div class="col-7 col-offset-3">
+            <div class="col-7 col-xs-12 col-offset-3 col-offset-md-1">
               <h2><em> <span style="transition-delay:0.25s">Асфальтобетонные </span></em><em><span style="transition-delay:0.5s">заводы SANY</span></em></h2>
               <h3><em><span style="transition-delay:0.75s">3 Производительностью от 80 до 450 тонн/час</span></em></h3>
             </div>
@@ -92,7 +117,7 @@
         </div>
         <div class="home-slider-item"> 
           <div class="main-grid">
-            <div class="col-7 col-offset-3">
+            <div class="col-7 col-xs-12 col-offset-3 col-offset-md-1">
               <h2><em> <span style="transition-delay:0.25s">Асфальтобетонные </span></em><em><span style="transition-delay:0.5s">заводы SANY</span></em></h2>
               <h3><em><span style="transition-delay:0.75s">4 Производительностью от 80 до 450 тонн/час</span></em></h3>
             </div>
@@ -118,13 +143,13 @@
         </div>
         <div class="about-slider">
           <div class="about-slider-item main-grid">
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-main">
                 <div class="img-cover"><img src="/images/temp/z1.jpg" alt=""></div>
                 <div class="about-item-num"> <span>1</span></div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xs-12">
               <div class="about-item about-item-info"> 
                 <div class="info-cell">
                   <h3>SLB1500X8</h3>
@@ -141,21 +166,21 @@
                 <div class="info-cell"><a class="more-btn--black" href="#"> <i> </i><span>Подробнее</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6 about-item-price-cell">
               <div class="about-item about-item-price">
                 <h3>150 млн. руб</h3>
                 <div>Средняя стоимость</div>
                 <div class="btn-container"> <a class="more-btn--white" href="#"> <i></i><span>Забронировать</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-next">
                 <h3>SLB2000C8</h3>
                 <div>120-160 тонн/час 42 м<sup>3</sup></div>
                 <div class="btn-container"> <a class="more-btn--gray" href="#"> <i></i><span>Следующий завод</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-preview">
                 <div class="img-cover"><img src="/images/temp/z2.jpg" alt=""></div>
                 <div class="about-item-num"> <span>2</span></div>
@@ -163,13 +188,13 @@
             </div>
           </div>
           <div class="about-slider-item main-grid">
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-main">
                 <div class="img-cover"><img src="/images/temp/z1.jpg" alt=""></div>
                 <div class="about-item-num"> <span>1</span></div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xs-12">
               <div class="about-item about-item-info"> 
                 <div class="info-cell">
                   <h3>SLB1500X8</h3>
@@ -186,21 +211,21 @@
                 <div class="info-cell"><a class="more-btn--black" href="#"> <i> </i><span>Подробнее</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6 about-item-price-cell">
               <div class="about-item about-item-price">
                 <h3>150 млн. руб</h3>
                 <div>Средняя стоимость</div>
                 <div class="btn-container"> <a class="more-btn--white" href="#"> <i></i><span>Забронировать</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-next">
                 <h3>SLB2000C8</h3>
                 <div>120-160 тонн/час 42 м<sup>3</sup></div>
                 <div class="btn-container"> <a class="more-btn--gray" href="#"> <i></i><span>Следующий завод</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-preview">
                 <div class="img-cover"><img src="/images/temp/z2.jpg" alt=""></div>
                 <div class="about-item-num"> <span>2</span></div>
@@ -208,13 +233,13 @@
             </div>
           </div>
           <div class="about-slider-item main-grid">
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-main">
                 <div class="img-cover"><img src="/images/temp/z1.jpg" alt=""></div>
                 <div class="about-item-num"> <span>1</span></div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xs-12">
               <div class="about-item about-item-info"> 
                 <div class="info-cell">
                   <h3>SLB1500X8</h3>
@@ -231,21 +256,21 @@
                 <div class="info-cell"><a class="more-btn--black" href="#"> <i> </i><span>Подробнее</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6 about-item-price-cell">
               <div class="about-item about-item-price">
                 <h3>150 млн. руб</h3>
                 <div>Средняя стоимость</div>
                 <div class="btn-container"> <a class="more-btn--white" href="#"> <i></i><span>Забронировать</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-next">
                 <h3>SLB2000C8</h3>
                 <div>120-160 тонн/час 42 м<sup>3</sup></div>
                 <div class="btn-container"> <a class="more-btn--gray" href="#"> <i></i><span>Следующий завод</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-preview">
                 <div class="img-cover"><img src="/images/temp/z2.jpg" alt=""></div>
                 <div class="about-item-num"> <span>2</span></div>
@@ -253,13 +278,13 @@
             </div>
           </div>
           <div class="about-slider-item main-grid">
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-main">
                 <div class="img-cover"><img src="/images/temp/z1.jpg" alt=""></div>
                 <div class="about-item-num"> <span>1</span></div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xs-12">
               <div class="about-item about-item-info"> 
                 <div class="info-cell">
                   <h3>SLB1500X8</h3>
@@ -276,21 +301,21 @@
                 <div class="info-cell"><a class="more-btn--black" href="#"> <i> </i><span>Подробнее</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6 about-item-price-cell">
               <div class="about-item about-item-price">
                 <h3>150 млн. руб</h3>
                 <div>Средняя стоимость</div>
                 <div class="btn-container"> <a class="more-btn--white" href="#"> <i></i><span>Забронировать</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-next">
                 <h3>SLB2000C8</h3>
                 <div>120-160 тонн/час 42 м<sup>3</sup></div>
                 <div class="btn-container"> <a class="more-btn--gray" href="#"> <i></i><span>Следующий завод</span></a></div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-xs-6">
               <div class="about-item about-item-preview">
                 <div class="img-cover"><img src="/images/temp/z2.jpg" alt=""></div>
                 <div class="about-item-num"> <span>2</span></div>
@@ -369,16 +394,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Грунтосмесительные установки </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -405,7 +430,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -432,7 +457,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -459,7 +484,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -490,16 +515,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Фронтальные погрузчики </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -526,7 +551,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -553,7 +578,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -580,7 +605,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -611,16 +636,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Бетоносмесительные установки </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -647,7 +672,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -674,7 +699,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -701,7 +726,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -732,16 +757,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Промышленные мельницы </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -768,7 +793,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -795,7 +820,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -822,7 +847,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -853,16 +878,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Дорожно-строительная техника </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -889,7 +914,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -916,7 +941,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -943,7 +968,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -974,16 +999,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Дробильно-сортировочные комплексы </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -1010,7 +1035,7 @@
               </div>
             </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="product-catalog-info">
             <h4>
                Варианты применения:</h4>
@@ -1029,16 +1054,16 @@
     </section>
     <section>
       <div class="head-section main-grid">
-        <div class="col-8">
+        <div class="col-8 col-xs-12">
           <h2>Дополнительное оборудование </h2>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-xs-12">
           <div class="btn-container"><a class="more-btn--black" href="#"><i> </i><span>Подробнее</span></a></div>
         </div>
       </div>
       <div class="main-grid">
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -1065,7 +1090,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -1092,7 +1117,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -1119,7 +1144,7 @@
               </div>
             </div>
         </div>
-        <div class="col-3 col-sm-6">
+        <div class="col-3 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="more-btn--white product-btn-hover"><i></i></div>
               <div class="product-item-img">
@@ -1154,31 +1179,31 @@
         <div>Если вам требуется консультация по любому типу оборудования, представленного на сайте, или вы хотите получить индивидуальное коммерческое предложение, то, пожалуйста, заполните данную форму, и наши специалисты в кратчайшие сроки свяжутся с вами. </div>
       </div>
       <div class="main-grid">
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Ваше имя:*</label>
               <input class="input-decorate require" type="text" placeholder="Введите имя">
           </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Ваша должность:</label>
               <input class="input-decorate require" type="text" placeholder="Введите должность">
           </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Ваш телефон:*</label>
               <input class="input-decorate phone-mask require" type="text" placeholder=" +7 000 000 - 00 – 00 ">
           </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Интересующий вас товар или услуга:</label>
               <input class="input-decorate undefined" type="text" placeholder="Введите наименование">
           </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Email:*</label>
               <input class="input-decorate check-mail undefined" type="email" placeholder="Введите email">
@@ -1188,13 +1213,13 @@
               <input class="input-decorate undefined" type="text" placeholder="Введите наименование организации">
           </div>
         </div>
-        <div class="col-6"> 
+        <div class="col-6 col-xs-12"> 
           <div class="input-box">
             <label>Дополнительные комментарии:</label>
               <textarea class="input-decorate undefined" placeholder="Введите дополнительные комментарии"></textarea>
           </div>
         </div>
-        <div class="col-12"> 
+        <div class="col-12 col-xs-12"> 
           <div class="input-box">
             <div class="checkbox agreement">
               <label>Согласен(на) на обработку <a href="#">персональных данных </a>
@@ -1207,7 +1232,7 @@
       </div>
     </section>
     <div class="stub"></div>
-    <footer>
+    <footer class="footer-desktop">
       <div class="main-grid">
         <div class="col-3 col-sm-6">
           <div class="nav nav-second">
@@ -1256,6 +1281,60 @@
             <li><a href="#">Разработка сайта Style You</a></li>
           </ul>
         </div>
+      </div>
+    </footer>
+    <footer class="footer-mobile">
+      <div class="main-grid">
+        <div class="col-12"><a class="logo" href="./index.html"><img src="/images/logo-black.svg" alt=""></a></div>
+        <div class="col-6">
+          <div class="nav nav-second">
+            <ul>
+              <li> <a href="#"> О компании</a></li>
+              <li> <a href="#"> Сервис и запасные части</a></li>
+              <li> <a href="#"> Проекты</a></li>
+              <li> <a href="#"> Вакансии</a></li>
+              <li> <a href="#"> Документы</a></li>
+              <li> <a href="#"> Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 feedback">
+          <div class="feedback-footer-item"><a href="#"> +7 (495) 969 58 69</a></div>
+          <div class="feedback-footer-item"><a href="#">dds@merko-russland.com</a></div>
+          <div class="feedback-footer-item"><span>Адрес:</span><b>141031, МО, г. Мытищи,<br>пос. Нагорное, ул. Центральная, вл. 3, с. 3, пом. 3</b></div>
+            <div class="social"><a href="#"><img src="/images/social/vk-white.svg" alt=""><img class="ico-hover" src="/images/social/vk-black.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="col-12">
+          <div class="footer-delimetr"></div>
+          <div class="nav">
+            <h3> <a href="#"> Продукция</a></h3>
+            <ul>
+              <li> <a href="#"> Асфальтобетонные заводы</a></li>
+              <li> <a href="#"> Грунтосмесительные установки</a></li>
+              <li> <a href="#"> Фронтальные погрузчики</a></li>
+              <li> <a href="#"> Бетоносмесительные установки</a></li>
+              <li> <a href="#"> Дополнительное оборудование</a></li>
+              <li> <a href="#"> Промышленные мельницы</a></li>
+              <li> <a href="#"> Дорожно-строительная техника</a></li>
+              <li> <a href="#"> Дробильно-сортировочные комплексы</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12"> 
+          <div class="footer-delimetr"></div>
+        </div>
+        <div class="col-6">
+          <div class="feedback-footer-item"> <span>Официальный представитель Производственная компания "Дорожные технологии" </span><b>B 192148, г. Санкт-Петербург, ул. Седова, д. 13</b></div>
+          <div class="feedback-footer-item"><span>Телефон:</span><a href="#">+7 (812) 900 61 90</a></div>
+          <div class="feedback-footer-item"><span>Почта:</span><a href="#">info@pk-dorteh.ru</a></div>
+        </div>
+        <div class="col-6"> 
+          <div class="feedback-footer-item"><span>Режим работы:</span><b>пн-пт с 9:00 до 19:00</b></div>
+        </div>
+        <div class="col-6 footer-links"> <a href="#">Политика конфиденциальности</a></div>
+        <div class="col-6 footer-links"><a href="#">Разработка сайта Style You</a></div>
+        <div class="col-12 footer-links">| ©2023г. ООО "Мерко Руссланд". Все права защищены</div>
       </div>
     </footer>
   </body>
