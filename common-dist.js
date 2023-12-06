@@ -413,6 +413,7 @@ $('body').on('click','.element-btn', function (e) {
     
     $('.element-show').removeClass('show');
     let activeIndex = $(this).attr('data-element');
+  console.log('activeIndex',activeIndex);
   
     $('[data-element="' + activeIndex + '"].element-show').addClass('show');
 
