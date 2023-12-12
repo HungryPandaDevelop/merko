@@ -1,13 +1,21 @@
 
 .popup
   @include positionElement(100%, 100%, 0, 0, left, top, 4, fixed, flex)
+  opacity: 0
+  visibility: hidden
+  transition: ease-out 0.5s
+  &.show
+    opacity: 1
+    visibility: visible
   h3,h4
     color: inherit
-    text-align: center
+  h3
+    font-size: 20px
+    margin-bottom: 30px
 
-  .btn
-    width: 100%
-
+  .main-grid
+    gap: 0 30px
+    padding: 0
 .popup-overlay
   @include positionElement(100%, 100%, 0, 0)
   background-color: $blueColor
@@ -22,11 +30,12 @@
 .popup-container
   position: relative
   background-color: $whiteColor
-  max-width: 600px
+  max-width: 1280px
   width: 100%
   height: auto
   margin: auto
-  padding: 90px 30px
+  padding: 45px 30px
+  border-radius: 20px
   transition: ease-out 0.5s
   overflow-y: auto
   max-height: 100%

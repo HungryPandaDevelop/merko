@@ -3,6 +3,7 @@
 .custom-select
 	cursor: pointer
 	position: relative
+	transition-duration: 0s
 	input
 		@include positionElement(0,0,0,0)
 		overflow: hidden
@@ -26,9 +27,11 @@
 			transition: ease-out 0.25s
 
 			&:hover
-				background: $grayColorSecond
+				background: $redColor
+				color: $whiteColor
 
 	&.active
+		border-radius: 10px 10px 0 0
 		z-index: 3
 		ul
 			visibility: visible

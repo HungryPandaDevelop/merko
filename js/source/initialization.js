@@ -69,6 +69,12 @@ aboutSlider.lightSlider({
   },
 });  
 
+$('.next-about-slider').on('click', function(e){
+  e.preventDefault();
+  aboutSlider.goToNextSlide(); 
+});
+// next-about-slider
+
 lightbox.option({
   'resizeDuration': 200,
   'wrapAround': true
@@ -81,7 +87,7 @@ $('.product-slider').lightSlider({
   item:1,
   thumbItem:6,
   slideMargin: 30,
-  enableDrag: false,
+  enableDrag: true,
   currentPagerPosition:'left',
 });  
 

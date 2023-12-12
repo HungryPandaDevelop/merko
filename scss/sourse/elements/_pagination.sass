@@ -40,31 +40,27 @@
     background-color: $redColor
     border-color: $redColor
 
-  .previous,
+  .prev,
   .next
-    a
-      background: none
-      background-size: 100%
-      font-size: 0
-      border-color: $whiteColor
+    background: none
+    background-size: 100%
+    font-size: 0
+    border-color: $whiteColor
     &.disabled
       opacity: 0
       visibility: hidden
-  .previous
-    a
+  .prev
+    @include icoEl(30px, 30px, "../images/arrows/carret-left-black.svg")
 
-      @include icoEl(30px, 30px, "../images/arrows/carret-left-black.svg")
-
-      &:hover
-        background-color: $redColor
-        background-image: url("../images/arrows/carret-left-white.svg")
+    &:hover
+      background-color: $redColor
+      background-image: url("../images/arrows/carret-left-white.svg")
 
   .next
-    a
-      @include icoEl(30px, 30px, "../images/arrows/carret-right-black.svg")
-      &:hover
-        background-color: $redColor
-        background-image: url("../images/arrows/carret-right-white.svg")
+    @include icoEl(30px, 30px, "../images/arrows/carret-right-black.svg")
+    &:hover
+      background-color: $redColor
+      background-image: url("../images/arrows/carret-right-white.svg")
 
 /*pagination page end*/
 

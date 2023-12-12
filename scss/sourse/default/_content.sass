@@ -30,10 +30,7 @@ section
 .head-section
 	margin-bottom: 30px
 	position: relative
-	// &::after
-	// 	content: ""
-	// 	@include positionElement(calc(100% - 210px), 4px ,15px, 23px)
-	// 	background-color: $blackColor
+
 	h2
 		margin-bottom: 15px
 		// background-color: $whiteColor
@@ -59,6 +56,13 @@ section
 		background-color: $whiteColor
 		position: relative
 		z-index: 1
+.head-section-line
+	&::after
+		content: ""
+		@include positionElement(calc(100% - 210px), 4px ,15px, 23px)
+		background-color: $blackColor
+	h2
+		background-color: $whiteColor
 .btn-container-section
 	padding: 40px 0 0px
 	text-align: center
