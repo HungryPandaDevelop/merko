@@ -420,6 +420,12 @@ $('body').on('click','.element-btn', function (e) {
     $('.element-show').removeClass('show');
     let activeIndex = $(this).attr('data-element');
     
+    if(activeIndex == 3){
+        let getText = $(this).parents('.order-item-js').find('.get-title-order');
+        // console.log(getText) 
+        $('.title-order').text(getText.text() );
+    }
+
   console.log('activeIndex',activeIndex);
   
     $('[data-element="' + activeIndex + '"].element-show').addClass('show');

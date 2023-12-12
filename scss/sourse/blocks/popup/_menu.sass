@@ -4,8 +4,16 @@
 		&:hover
 			background-image: url("../images/icons/close-yellow.svg")
 .popup-nav
+	ul,li
+		list-style: none
+		padding: 0
+		margin: 0
 	.close-btn
 		background-image: url("../images/icons/close-gray.svg")
+	a
+		width: 100%
+	#menu-item-175
+		display: none
 .menu-mobile
 	display: flex
 	justify-content: space-between
@@ -43,8 +51,17 @@
 			@include positionElement(30px,30px,0, 50%, right)
 			@include bgImageEl("../images/arrows/carret-down-black.svg")
 			margin-top: -15px
+			&::before
+				display: none
 		ul
 			display: none
+			font-size: 18px
+			padding-left: 30px
+			li:last-child
+				border: 0
+		&:hover
+			ul
+				display: block
 .menu-footer
 	// @include positionElement(100%,auto,0,0,left, bottom)
 	background-color: $redColor
