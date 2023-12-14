@@ -47,7 +47,7 @@ let aboutSlider = $('.about-slider');
 
 aboutSlider.lightSlider({
   item:1,
-  // loop:true,
+  loop:true,
   slideMove:1,
   speed:500,
   // slideEndAnimation:false,
@@ -92,6 +92,27 @@ $('.product-slider').lightSlider({
   enableDrag: true,
   currentPagerPosition:'left',
 });  
+
+if($(window).width()<576){
+  $('.production-mobile-slider').removeClass("main-grid");
+  $('.production-mobile-slider').lightSlider({
+    loop:true,
+    pager: false,
+    controls: false,
+    // gallery:true,
+    item:1,
+    // thumbItem:6,
+    slideMargin: 30,
+    addClass:'production-mobile-slider-container',
+    enableDrag: true,
+    // currentPagerPosition:'left',
+    
+  });  
+}
+
+
+
+
 
 
 
@@ -141,7 +162,18 @@ recyclingSlider.lightSlider({
 
 
 
-
+$('.input-date').each(function(){
+  let thisEl = $(this);
+  let dp = new AirDatepicker(this,{
+    // timepicker: true,
+    // timeFormat: 'hh:mm AA',
+    onSelect({date}) {
+      thisEl.addClass('input-empty');
+      console.log('done', date) 
+    }
+  },
+  );
+})
 
 
 
@@ -481,7 +513,10 @@ $('.main-scroll-down').on('click',function(){
   $("html, body").animate({ scrollTop: $(window).height() }, 600);
 });
 
-
+$('.hover-li > a').on('click',function(e){
+  e.preventDefault();
+  $(this).parent().toggleClass('active');
+});
 
 
 

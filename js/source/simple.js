@@ -28,7 +28,10 @@ $('.main-scroll-down').on('click',function(){
   $("html, body").animate({ scrollTop: $(window).height() }, 600);
 });
 
-
+$('.hover-li > a').on('click',function(e){
+  e.preventDefault();
+  $(this).parent().toggleClass('active');
+});
 
 
 

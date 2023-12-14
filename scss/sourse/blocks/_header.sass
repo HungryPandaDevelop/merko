@@ -8,7 +8,7 @@ header
   @include bgImageEl("../images/header-gradient.png", cover, center bottom)
   // background-color: $whiteColor
   min-width: 320px
-  padding: 10px 0
+  // padding: 10px 0
   transition: ease-out 0.5s
   a
     text-decoration: none
@@ -46,7 +46,9 @@ header
       &:hover
         i
           background-image: url("../images/icons/mail-red.svg")
-
+    li
+      i
+        background-image: url("../images/arrows/carret-down-black.svg")
 .logo-red
   display: none
 
@@ -76,21 +78,28 @@ header
       background-color: $whiteColor
       padding: 0
       width: 260px
-      border: 1px solid $grayColorSecond
+      // border: 1px solid $grayColorSecond
       font-size: $smallSize
       // font-weight: 400
       transition: ease-out 0.25s
       opacity: 0
       visibility: hidden
       color: $blackColor
+      box-shadow: 0 0 33px rgb(0 0 0 / 7%)
+      border-radius: 0 20px 0 20px
+      overflow: hidden
       li
-        border-bottom: 1px solid $grayColorSecond
+        // border-bottom: 1px solid $grayColorSecond
         display: block
         &:last-child
           border: 0
       a
         padding: 16px 20px
         text-transform: initial
+        &:hover
+          text-decoration: underline
+        &::after
+          display: none
     &:hover
       ul
         opacity: 1
@@ -98,7 +107,12 @@ header
         transform: translateX(-50%) translateY(0)
   a
     position: relative
-    padding: 6px 25px
+    padding: 16px 25px
+    &::after
+      content: ''
+      @include positionElement(0,4px,0,0,left,bottom)
+      background-color: $redColor
+      transition: ease-out 0.5s
     &:hover
       color: $redColor
       background-color: $whiteColor
@@ -110,10 +124,12 @@ header
         display: none
   a
     &:hover
+
+      &::after
+        width: 100%
       i
         background-image: url("../images/arrows/carret-down-red.svg")
-    &.inner-nav
-      padding-right: 20px
+
 .feedback-header
   margin-left: auto
   gap: 30px
@@ -135,6 +151,6 @@ header
       width: 160px
 @media (max-width: 576px)
   header
-    padding: 45px 0 15px
+    padding: 20px 0 15px
     .btn
       display: none

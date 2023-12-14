@@ -36,9 +36,18 @@ $icoOffset: 8px
 	@include icoBtn("../images/social/whatsapp-black.svg", false, $icoSize)
 	border-color: $blackColor
 
+.about-btn--black
+	@include icoBtn("../images/znak_1-black.png", "../images/znak_1-red.png", 50px)
+	text-decoration: none
+
 .more-btn--black
 	@include icoBtn("../images/icons/more-black.svg", "../images/icons/more-red.svg", 50px)
 	text-decoration: none
+.order-btn--white
+	@include icoBtn("../images/znak_2-white.png", "../images/znak_2-black.png", 50px)
+	text-decoration: none
+	&:hover
+		color: $blackColor
 
 .more-btn--white
 	@include icoBtn("../images/icons/more-white.svg", "../images/icons/more-white.svg", 50px)
@@ -58,7 +67,9 @@ $icoOffset: 8px
 @media (max-width: 576px)
 	.more-btn--white,
 	.more-btn--gray,
-	.more-btn--black
+	.more-btn--black,
+	.order-btn--white,
+	.about-btn--black
 		i
 			width: 30px
 			height: 30px

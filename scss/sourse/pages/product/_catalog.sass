@@ -7,10 +7,13 @@
   height: 100%
   &:hover
     h3
-      margin-top: calc(100% - 55px)
+      // margin-top: 0
+      top: 0
       background-color: $grayColorSecond
     .product-btn-hover
-      left: 15px
+      left: -90px
+    .product-btn-bottom
+      top: calc(100% - 180px)
   a
     text-decoration: none
 
@@ -26,6 +29,11 @@
     height: 70px
     display: flex
     align-items: center
+    // margin-top: calc(100% - 70px)
+
+    position: relative
+    top: calc(100% - 70px)
+
     a
 
       position: relative
@@ -58,7 +66,7 @@
     position: relative
     z-index: 1
     margin: 0 0 0 15px
-    top: calc(100% - 140px)
+    // top: calc(100% - 140px)
 .product-item-cover
   @include positionElement(100%,100%,0,0)
   transition: ease-out 0.5s
@@ -85,7 +93,7 @@
 .product-btn-hover
   position: absolute
   top: 15px
-  left: -90px
+  left: 15px
   transition: ease-out 0.5s
   z-index: 2
 .product-catalog-info
@@ -96,3 +104,16 @@
     margin-bottom: 11px
 .product-catalog-info-stub
   height: 30px
+.product-btn-bottom
+  top: 100%
+  transition: ease-out 0.5s
+@media (max-width: 576px)
+  .production-mobile-slider-container
+    padding: 0 15px
+    position: relative
+    overflow: hidden
+    .lSSlideWrapper
+      width: calc( 100% - 60px )
+      overflow: visible
+  .product-btn-bottom
+    display: none
