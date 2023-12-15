@@ -5,6 +5,11 @@
 
   li
     margin-bottom: 8px
+  .btn
+    width: 100%
+    margin-bottom: 15px
+  .close-btn
+    display: none
 .filter-product-item
   margin-bottom: 30px
   .checkbox
@@ -15,3 +20,21 @@
     &:hover,
     &.active
       color: $blackColor
+.btn-filter-container
+  display: none
+@media (max-width: 576px)
+  .filter-product-container
+    display: none
+    @include positionElement(100%,100%,0,0, left,top, 3, fixed)
+    padding: 95px 15px 15px
+    background-color: $whiteColor
+    &.show
+      display: block
+    .close-btn
+      display: block
+  .btn-filter-container
+    display: flex
+    gap: 15px
+    margin-top: 30px
+    .btn
+      width: 50%

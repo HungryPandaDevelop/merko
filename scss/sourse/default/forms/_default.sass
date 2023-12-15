@@ -58,6 +58,20 @@ input
 	text-align: right
 	.wpcf7-acceptance
 		display: inline-block
+.range-slider-box
+	input
+		display: none
+	.irs--round
+		.irs-bar
+			background-color: $redColor
+		.irs-handle
+			border-color: $redColor
+		.irs-from,
+		.irs-to,
+		.irs-single
+			background-color: $redColor
+			&:before
+				border-top-color: $redColor
 @media (max-width: 820px)
 	.input-box
 		label

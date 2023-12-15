@@ -808,6 +808,32 @@ section {
   background-image: url("../images/icons/more-red.svg");
 }
 
+.filter-btn--red {
+  border-color: #202020;
+  text-decoration: none;
+}
+.filter-btn--red i, .filter-btn--red span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.filter-btn--red i {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/icons/filter-white.svg");
+}
+.filter-btn--red:hover {
+  color: #E52521;
+}
+.filter-btn--red:hover i {
+  background-image: url("../images/icons/filter-black.svg");
+}
+
 .link-next {
   border-color: #202020;
   text-decoration: none;
@@ -1803,6 +1829,26 @@ input {
 }
 .agreement-box .wpcf7-acceptance {
   display: inline-block;
+}
+
+.range-slider-box input {
+  display: none;
+}
+.range-slider-box .irs--round .irs-bar {
+  background-color: #E52521;
+}
+.range-slider-box .irs--round .irs-handle {
+  border-color: #E52521;
+}
+.range-slider-box .irs--round .irs-from,
+.range-slider-box .irs--round .irs-to,
+.range-slider-box .irs--round .irs-single {
+  background-color: #E52521;
+}
+.range-slider-box .irs--round .irs-from:before,
+.range-slider-box .irs--round .irs-to:before,
+.range-slider-box .irs--round .irs-single:before {
+  border-top-color: #E52521;
 }
 
 @media (max-width: 820px) {
@@ -4643,6 +4689,13 @@ footer h3 a {
 .filter-product li {
   margin-bottom: 8px;
 }
+.filter-product .btn {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.filter-product .close-btn {
+  display: none;
+}
 
 .filter-product-item {
   margin-bottom: 30px;
@@ -4658,6 +4711,39 @@ footer h3 a {
   color: #202020;
 }
 
+.btn-filter-container {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .filter-product-container {
+    display: none;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    padding: 95px 15px 15px;
+    background-color: #ffffff;
+  }
+  .filter-product-container.show {
+    display: block;
+  }
+  .filter-product-container .close-btn {
+    display: block;
+  }
+  .btn-filter-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .btn-filter-container .btn {
+    width: 50%;
+  }
+}
 .product-item {
   background-color: #ffffff;
   position: relative;
