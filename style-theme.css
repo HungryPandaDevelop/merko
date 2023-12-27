@@ -148,7 +148,7 @@ p {
 }
 @media (max-width: 576px) {
   h1 {
-    font-size: 32px;
+    font-size: 21px;
   }
 }
 /*-----base-end----*/
@@ -302,6 +302,9 @@ section {
   }
   .head-section-text {
     width: 100%;
+  }
+  .breadcrumbs {
+    font-size: 12px;
   }
 }
 /*-----default-content-end----*/
@@ -811,6 +814,7 @@ section {
 .filter-btn--red {
   border-color: #202020;
   text-decoration: none;
+  border: 0;
 }
 .filter-btn--red i, .filter-btn--red span {
   display: inline-block;
@@ -2724,6 +2728,7 @@ header {
   min-width: 320px;
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
+  padding: 15px 0 0;
 }
 header a {
   text-decoration: none;
@@ -2733,7 +2738,7 @@ header .btn {
   font-size: 14px;
 }
 header .main-grid {
-  gap: 15px 30px;
+  gap: 0px 30px;
 }
 header.stick {
   top: -200px;
@@ -2922,6 +2927,9 @@ header.show li i {
   }
   header .btn {
     display: none;
+  }
+  .stub {
+    height: 70px;
   }
 }
 footer {
@@ -3331,7 +3339,7 @@ footer h3 a {
 
 @media (max-width: 576px) {
   .popup-container {
-    padding: 45px 15px;
+    padding: 60px 15px 30px;
     border-radius: 0;
   }
   .popup-container h2 {
@@ -3364,9 +3372,6 @@ footer h3 a {
 .popup-nav a {
   width: 100%;
 }
-.popup-nav #menu-item-175 {
-  display: none;
-}
 
 .menu-mobile {
   display: -webkit-box;
@@ -3379,7 +3384,7 @@ footer h3 a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 100dvh;
 }
 
 .menu-hamburger {
@@ -3461,6 +3466,15 @@ footer h3 a {
   padding: 25px 15px;
   border-radius: 0 50px 0 0;
 }
+.menu-footer a:hover {
+  color: #ffffff !important;
+}
+.menu-footer .phone-btn:hover i {
+  background-image: url(../images/icons/phone-white.svg);
+}
+.menu-footer .mail-btn:hover i {
+  background-image: url(../images/icons/mail-white.svg);
+}
 
 .menu-footer-item {
   font-size: 16px;
@@ -3469,7 +3483,7 @@ footer h3 a {
 
 .menu-header,
 .popup-nav {
-  padding: 45px 15px 60px;
+  padding: 45px 15px 0px;
 }
 
 .popup-nav a {
@@ -3516,6 +3530,22 @@ footer h3 a {
   width: 100%;
 }
 
+.address-for-map {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .page-contacts h1 {
+    margin-bottom: 30px;
+  }
+  .page-contacts h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .address-item {
+    margin-bottom: 15px;
+  }
+}
 .recycling-main {
   height: 660px;
   position: relative;
@@ -3621,6 +3651,7 @@ footer h3 a {
 
 .recycling-item-info {
   padding: 30px;
+  height: 360px;
   background-color: #ECECEC;
   border-radius: 0 50px 0 50px;
 }
@@ -3765,6 +3796,18 @@ footer h3 a {
   overflow: hidden;
 }
 
+@media (max-width: 576px) {
+  .nodes-stage-item {
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+  }
+  .nodes-stage {
+    height: auto;
+  }
+  .nodes-stage-gallery .main-grid {
+    gap: 8px;
+  }
+}
 .link-next-container {
   text-align: right;
 }
@@ -4738,7 +4781,8 @@ footer h3 a {
     display: -ms-flexbox;
     display: flex;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: -30px;
   }
   .btn-filter-container .btn {
     width: 50%;
@@ -4758,7 +4802,7 @@ footer h3 a {
   left: -90px;
 }
 .product-item:hover .product-btn-bottom {
-  top: calc(100% - 180px);
+  top: 150px;
 }
 .product-item a {
   text-decoration: none;
@@ -4798,6 +4842,18 @@ footer h3 a {
   padding-bottom: 4px;
 }
 
+.product-info-item {
+  border-bottom: 1px solid #202020;
+}
+.product-info-item:last-child {
+  padding: 0;
+  border: 0;
+  padding-bottom: 20px;
+}
+.product-info-item .main-grid {
+  gap: 5px 15px;
+}
+
 .product-item-price {
   font-weight: 700;
   margin: auto 0;
@@ -4834,7 +4890,7 @@ footer h3 a {
 
 .product-item-description {
   font-size: 14px;
-  margin: 15px 0 30px;
+  margin: 15px 0 15px;
 }
 .product-item-description li {
   margin: 0 0 0px;
@@ -4885,7 +4941,7 @@ footer h3 a {
 }
 
 .product-btn-bottom {
-  top: 100%;
+  top: 300px;
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
@@ -4998,6 +5054,9 @@ footer h3 a {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+.product-about .btn {
+  display: none;
+}
 .product-about h3 {
   font-size: 36px;
 }
@@ -5064,6 +5123,9 @@ footer h3 a {
     gap: 10px 0;
   }
   .product-about {
+    display: block;
+  }
+  .product-about .btn {
     display: block;
   }
   .product-about .about-item {

@@ -137,7 +137,7 @@ recyclingSlider.lightSlider({
   slideMove:1,
   easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
   speed:600,
-  autoWidth:true,
+  // autoWidth:true,
   onSliderLoad: function (el) {
     let parentEl = $(el[0]).parents('.slider-container');
     

@@ -13,7 +13,7 @@
     .product-btn-hover
       left: -90px
     .product-btn-bottom
-      top: calc(100% - 180px)
+      top: 150px
   a
     text-decoration: none
 
@@ -45,6 +45,14 @@
   text-align: right
   font-size: 12px
   padding-bottom: 4px
+.product-info-item
+  border-bottom: 1px solid $blackColor
+  &:last-child
+    padding: 0
+    border: 0
+    padding-bottom: 20px
+  .main-grid
+    gap: 5px 15px
 
 .product-item-price
   font-weight: 700
@@ -75,7 +83,7 @@
 
 .product-item-description
   font-size: $smallSize
-  margin: 15px 0 30px
+  margin: 15px 0 15px
   li
     margin: 0 0 0px
     display: flex
@@ -105,7 +113,7 @@
 .product-catalog-info-stub
   height: 30px
 .product-btn-bottom
-  top: 100%
+  top: 300px
   transition: ease-out 0.5s
 @media (max-width: 576px)
   .production-mobile-slider-container
