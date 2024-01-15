@@ -1,127 +1,133 @@
 
 .product-item
-  background-color: $whiteColor
-  // border: 1px solid $grayColorSecond
-  position: relative
-  overflow: hidden
-  height: 100%
-  &:hover
-    h3
-      // margin-top: 0
-      top: 0
-      background-color: $grayColorSecond
-    .product-btn-hover
-      left: -90px
-    .product-btn-bottom
-      top: 150px
-  a
-    text-decoration: none
+	background-color: $whiteColor
+	// border: 1px solid $grayColorSecond
+	position: relative
+	overflow: hidden
+	height: 100%
+	&:hover
+		h3
+			// margin-top: 0
+			top: 0
+			background-color: $grayColorSecond
+		.product-btn-hover
+			left: -90px
+		.product-btn-bottom
+			top: 150px
+	a
+		text-decoration: none
 
-  h3
-    font-size: $standartSize
-    background-color: $redColor
-    color: $whiteColor
-    border-radius: 40px 0 40px 0
-    position: relative
-    z-index: 1
-    padding: 0px 25px
-    transition: ease-out 0.5s
-    height: 70px
-    display: flex
-    align-items: center
-    // margin-top: calc(100% - 70px)
+	h3
+		font-size: $standartSize
+		background-color: $redColor
+		color: $whiteColor
+		border-radius: 40px 0 40px 0
+		position: relative
+		z-index: 1
+		padding: 0px 25px
+		transition: ease-out 0.5s
+		height: 70px
+		display: flex
+		align-items: center
+		// margin-top: calc(100% - 70px)
 
-    position: relative
-    top: calc(100% - 70px)
+		position: relative
+		top: calc(100% - 70px)
 
-    a
+		a
 
-      position: relative
-      overflow: hidden
-      font-size: inherit
-      &:hover
-        color: $goldColor
+			position: relative
+			overflow: hidden
+			font-size: inherit
+			&:hover
+				color: $goldColor
 .product-item-hint
-  text-align: right
-  font-size: 12px
-  padding-bottom: 4px
+	text-align: right
+	font-size: 12px
+	padding-bottom: 4px
 .product-info-item
-  border-bottom: 1px solid $blackColor
-  &:last-child
-    padding: 0
-    border: 0
-    padding-bottom: 20px
-  .main-grid
-    gap: 5px 15px
+	border-bottom: 1px solid $blackColor
+	&:last-child
+		padding: 0
+		border: 0
+		padding-bottom: 20px
+	.main-grid
+		gap: 5px 15px
 
 .product-item-price
-  font-weight: 700
-  margin: auto 0
+	font-weight: 700
+	margin: auto 0
 .product-item-img
-  width: 100%
-  height: 300px
-  border-radius: 40px 0 40px 0
-  display: block
-  position: relative
-  overflow: hidden
-  // background-color: $blueColor
-  font-size: 0
-  // transform: scale(1.01)
-  // display: flex
-  // flex-direction: column
+	width: 100%
+	height: 300px
+	border-radius: 40px 0 40px 0
+	display: block
+	position: relative
+	overflow: hidden
+	// background-color: $blueColor
+	font-size: 0
+	// transform: scale(1.01)
+	// display: flex
+	// flex-direction: column
 
-  .more-btn--white
-    position: relative
-    z-index: 1
-    margin: 0 0 0 15px
-    // top: calc(100% - 140px)
+	.more-btn--white
+		position: relative
+		z-index: 1
+		margin: 0 0 0 15px
+		// top: calc(100% - 140px)
 .product-item-cover
-  @include positionElement(100%,100%,0,0)
-  transition: ease-out 0.5s
-  &:hover
-    transform: scale(1.1)
+	@include positionElement(100%,100%,0,0)
+	transition: ease-out 0.5s
+	&:hover
+		transform: scale(1.1)
 
 .product-item-description
-  font-size: $smallSize
-  margin: 15px 0 15px
-  li
-    margin: 0 0 0px
-    display: flex
-    justify-content: space-between
-  div
-    min-height: 21px
+	font-size: $smallSize
+	margin: 15px 0 15px
+	li
+		margin: 0 0 0px
+		display: flex
+		justify-content: space-between
+	div
+		min-height: 21px
 
 .btn-product-container
-  display: flex
-  justify-content: space-between
-  gap: 12px
-  .btn
-    width: 100%
+	display: flex
+	justify-content: space-between
+	gap: 12px
+	.btn
+		width: 100%
 
 .product-btn-hover
-  position: absolute
-  top: 15px
-  left: 15px
-  transition: ease-out 0.5s
-  z-index: 2
+	position: absolute
+	top: 15px
+	left: 15px
+	transition: ease-out 0.5s
+	z-index: 2
 .product-catalog-info
-  border-radius: 20px
-  background: #EDEDED
-  padding: 30px
-  h4
-    margin-bottom: 11px
+	border-radius: 20px
+	background: #EDEDED
+	padding: 30px
+	h4
+		margin-bottom: 11px
 .product-catalog-info-stub
-  height: 30px
+	height: 30px
 .product-btn-bottom
-  top: 300px
-  transition: ease-out 0.5s
+	top: 300px
+	transition: ease-out 0.5s
+
+.product-empty
+	text-align: center
+	padding-top: 45px
+	h3
+		margin-bottom: 30px
 @media (max-width: 576px)
-  .production-mobile-slider-container
-    padding: 0 15px
-    position: relative
-    overflow: hidden
-    .lSSlideWrapper
-      width: calc( 100% - 60px )
-      overflow: visible
-  .product-btn-bottom
-    display: none
+	.production-mobile-slider-container
+		padding: 0 15px
+		position: relative
+		overflow: hidden
+		.lSSlideWrapper
+			width: calc( 100% - 60px )
+			overflow: visible
+	.product-btn-bottom
+		display: none

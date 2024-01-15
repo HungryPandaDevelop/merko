@@ -4946,6 +4946,14 @@ footer h3 a {
   transition: ease-out 0.5s;
 }
 
+.product-empty {
+  text-align: center;
+  padding-top: 45px;
+}
+.product-empty h3 {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
   .production-mobile-slider-container {
     padding: 0 15px;
