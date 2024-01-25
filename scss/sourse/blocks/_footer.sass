@@ -51,7 +51,8 @@ footer
 
 .footer-mobile
   display: none
-
+.stub-footer
+  height: 90px
 @media (max-width: 576px)
   footer
     font-size: 12px
@@ -68,7 +69,15 @@ footer
     display: block
     font-size: 10px
     margin-bottom: 10px
+  .feedback-footer-item
+    text-align: right
   .footer-delimetr
     @include positionElement(calc(100% - 30px),1px, 15px, auto)
     margin-top: -15px
     background-color: $whiteColor
+  .stub-footer
+    height: 30px
+  .footer-links-center
+    text-align: right
+  .social
+    padding: 0 0 30px

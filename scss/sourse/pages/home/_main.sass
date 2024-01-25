@@ -1,7 +1,7 @@
 .main-home
   height: 100vh
   min-height: 620px
-  background-color: $blueColor
+  background-color: $blackColor
   position: relative
   color: $whiteColor
 
@@ -15,9 +15,11 @@
     margin-bottom: 30px
     line-height: 1
   h3
-    font-size: 20px
+    font-size: 18px
     font-weight: 500
-
+    vertical-align: top
+    em
+      height: 60px
   .lSSlideOuter
     position: absolute
     width: 100%
@@ -37,7 +39,7 @@
 
   .lSNext
     right: auto
-    left: 110px
+    left: 79px
     &:hover
       transform: translateX(10px) translateY(-50%)
 
@@ -46,12 +48,16 @@
       transform: translateX(-10px) translateY(-50%)
 
 .home-slider-item
+  position: relative
+  a
+    text-decoration: none
   em
     font-style: normal
     position: relative
     display: inline-block
     overflow: hidden
     height: 1.1em
+    display: block
   span
     position: relative
     top: 100%
@@ -70,9 +76,14 @@
   height: 100%
   padding-top: 150px
   display: flex
-
+  &.active
+    .main-home-img
+      opacity: 1
+      transition-delay: 0.25s
 .main-home-img
   @include positionElement(100%,100%,0,0)
+  transition: ease-out 0.75s
+  opacity: 0
 
 .main-scroll-down
   @include positionElement(80px, 245px, 0, 0, right, bottom, 3)
@@ -94,8 +105,20 @@
       font-size: 48px
 @media (max-width: 576px)
   .main-home
+    height: 450px
+    min-height: auto
     h2
       font-size: 32px
       margin-bottom: 15px
     h3
       font-size: 14px
+    .lSAction
+      top: auto
+      bottom: 30px
+    .num-slider
+      top: auto
+      bottom: 16px
+
+  .main-scroll-down
+    height: 85px
+    padding: 22px 4px
