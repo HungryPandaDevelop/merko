@@ -1,5 +1,5 @@
 .main-home
-  height: 100vh
+  height: calc(100vh - 99px)
   min-height: 620px
   background-color: $blackColor
   position: relative
@@ -10,7 +10,6 @@
   .main-grid
     margin-top: auto
     margin-bottom: auto
-    width: 100%
   h2
     font-size: 64px
     margin-bottom: 30px
@@ -85,7 +84,8 @@
   @include positionElement(100%,100%,0,0)
   transition: ease-out 0.75s
   opacity: 0
-
+  &.img-mobile
+    display: none
 .main-scroll-down
   @include positionElement(80px, 245px, 0, 0, right, bottom, 3)
   background: $redColor
@@ -100,13 +100,16 @@
   &:hover
     i
       transform: translateY(15px)
+.main-home
+  *
+    text-decoration: none
 @media (max-width: 992px)
   .main-home
     h2
       font-size: 48px
 @media (max-width: 576px)
   .main-home
-    height: 450px
+    height: 383px
     min-height: auto
     h2
       font-size: 32px
@@ -119,7 +122,15 @@
     .num-slider
       top: auto
       bottom: 16px
-
+  .home-slider-item
+    padding-top: 30px
+  .main-home-img
+    &.img-desktop
+      display: none
+    &.img-mobile
+      display: block
   .main-scroll-down
     height: 85px
     padding: 22px 4px
+  .home-slider-item
+    height: 383px

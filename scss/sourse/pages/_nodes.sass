@@ -17,18 +17,20 @@
     color: inherit
     margin-bottom: 15px
 .nodes-section
-  padding: 60px 0
-  font-size: 18px
+  padding: 60px 0 0
+
   h2
     margin: 0 0 30px
     font-size: 32px
+
 .nodes-stage
-  height: 620px
+  min-height: 620px
   position: relative
   overflow: hidden
   border-radius: 0 50px 0 50px
   padding: 30px 60px
   color: $whiteColor
+  margin-top: 60px
 .nodes-stage-item
   grid-column: span 3
   position: relative
@@ -47,6 +49,10 @@
   position: relative
   border-radius: 20px
   overflow: hidden
+
+.nodes-middle-text
+  margin-top: 30px
+
 @media (max-width: 576px)
   .nodes-stage-item
     grid-column: span 12
